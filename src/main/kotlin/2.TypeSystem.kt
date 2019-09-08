@@ -1,8 +1,3 @@
-import com.sun.org.apache.xpath.internal.operations.Bool
-import java.util.*
-import kotlin.random.Random
-
-
 fun main() {
 
 
@@ -26,7 +21,7 @@ primitive and reference types.
 
  */
 
-    //<editor-fold desc="Numbers">
+     //<editor-fold desc="Numbers">
 
 
 //    val number : Number
