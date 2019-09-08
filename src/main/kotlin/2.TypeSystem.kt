@@ -21,7 +21,7 @@ primitive and reference types.
 
  */
 
-     //<editor-fold desc="Numbers">
+    //<editor-fold desc="Numbers">
 
 
 //    val number : Number
@@ -202,9 +202,90 @@ primitive and reference types.
 //   // Check TypeSystem png in resources.
 
 
+    //</editor-fold>
+
+    //<editor-fold desc="Non Null able to  Null able ">
+//  // We can only assign non null able values to null able values but vice versa is not true.
+//    var nullable: String? = null
+//    var nonNullAble: String = "NonNullable"
+//    nullable = nonNullAble
+//    nonNullAble = nullable
 
     //</editor-fold>
 
+    //<editor-fold desc="Casting">
+//  // In Kotlin, we can say there are three type of castings: 1. UnSafe Casting, 2. Safe Casting, 3. Smart Casting
+
+//  // UnSafe Casting
+
+//    val any: Any = "3"
+//    val s: String = any as String
+//    println(s)
+
+//    val any: Any = "3"
+//    val s: Int = any as Int
+//    println(s)
+
+
+    // Safe Casting
+//    val any: Any = "3"
+//    val i: Int? = any as? Int
+//    println(i)
+
+//    val any: Any = "3"
+//    val i: Int? = any as? Int ?: 0
+//    println(i)
+
+//  // UnSafe Cast will throw Class Cast Exception but SafeCast will return null value.
+
+//  // In Kotlin, if we want to cast between Java primitive types, we have extension methods
+//    val i: Int = 3
+//    i.toDouble()
+//    i.toFloat()
+//    i.toString()
+//    i.toShort()
+
+//  // Smart Casts. Compiler will track of the casting implicitly where compiler will be 100% assure
+
+//    val a: Any = "Any"
+
+
+//    a.length
+//    if (a is String) {
+//        a.length
+//    }
+
+//    fun local(a: Any) {
+//        if (a !is String) return
+//
+//        a.length
+//    }
+
+//    if (a !is String || a.length > 0) {
+//
+//    }
+
+//    if (a is String && a.length > 2) {
+//    }
+
+//  // Smart Cast will work with when expression. Will discuss in Control Flow
+//    when(a){
+//        is Int -> a
+//        is Float -> a
+//        is String -> a
+//        is IntArray -> a
+//    }
+
+//    var nullable: String? = null
+//    if(nullable !=null){
+//        nullable.length
+//        nullable.capitalize()
+//    }
+//    nullable.length
+//    nullable.capitalize()
+
+
+    //</editor-fold>
 
 }
 
